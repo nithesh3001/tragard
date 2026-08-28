@@ -1,0 +1,36 @@
+.conten li{
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 10px;
+    list-style-type:"❯❯  ";
+    
+}
+
+.term_img{
+    width: 50%;
+}
+.banner{
+    background: url(../assets/termandcond.png);
+}
+li .titl, h5{
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+@media (max-width: 640px) {
+    .term_img{
+        width: 20%;
+        display: flex;
+        margin: auto;
+    }
+    .conten li{
+        font-size: 14px;
+       margin-top: 20px;
+       line-height: 25px;
+    }
+    .conten span{
+        color: #1268b3;
+        font-size: 18px;
+    }
+}
+

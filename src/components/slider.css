@@ -1,0 +1,28 @@
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(54, 53, 53, 0.2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+  .custom-prev {
+    left: 10px;
+  }
+  .custom-next {
+    right: 25px;
+  }
+  @media (max-width: 767px) {
+    img{
+      object-fit: cover;
+    }
+    .custom-prev {
+      font-size: 10px;
+    }
+    .custom-next {
+      font-size: 10px;
+    }
+  }

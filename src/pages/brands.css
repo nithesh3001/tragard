@@ -1,0 +1,104 @@
+.brand-bg {
+    background-image: url('/src/assets/brands.png');
+}
+
+.brandpic {
+    object-fit: contain;
+    width: 50%;
+    height: 80px;
+
+}
+
+.outer {
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    background: #f8f9fa;
+    border-radius: 10px;
+    height: 100%; /* Ensures the outer fills the bbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hovcont {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    color: white;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.hovcont::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #1268b3;
+    border-bottom-left-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.bbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Fixed height for uniformity */
+    box-sizing: border-box;
+}
+
+.bbox:nth-child(1) .outer .bp {
+    line-height: 25px;
+}
+
+.uuline {
+    border: 1px solid #1268b3;
+    width: 50px;
+}
+
+.outer:hover .hovcont::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.outer:hover .hovcont {
+    color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+    border-radius: 0%;
+    z-index: 5;
+}
+
+.outer:hover .arow-btn {
+    opacity: 100%;
+}
+
+@media (max-width: 768px) {
+    .brandpic {
+        width: 45%;
+    }
+    .bbox {
+        height: auto; /* Allow adjustment for smaller devices */
+        width: 90%; /* Use most of the screen width */
+    }
+    .outer {
+        padding: 10px; /* Adjust padding for mobile screens */
+    }
+}

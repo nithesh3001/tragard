@@ -1,0 +1,38 @@
+
+
+.particover{
+    position: relative;
+    overflow: hidden;  
+    border: 8px solid white;
+    border-radius: 30px;
+    background-color: hsl(203, 39%, 78%);
+    height: 170px;
+}
+.particover .parti:hover{
+    border-radius: 0%;
+    transition: 0.5s;
+    background-color: rgb(126, 151, 163);
+    transition: 0.7s;
+}
+.parti:hover{
+    transform: scale(1.1); 
+}
+
+.clint{
+    background-color:#a5c6e2;
+}
+.flipkart-logo {
+    width: 150px; /* Adjust width to your desired size */
+}
+.client_cc .slick-dots {
+    bottom: -40px !important; /* Adjust position */
+  }
+  .slick-dots li button::before {
+    color: #000000 !important; /* Change to your desired color */
+    font-size: 16px; /* Optional: Adjust dot size */
+}
+.slick-dots li.slick-active button::before {
+    color: #1268b3 !important; /* Change to your desired active color */
+}
+  
+

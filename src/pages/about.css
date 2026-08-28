@@ -1,0 +1,64 @@
+.zoom {
+    display: inline-block;
+    animation: zoomInOut 2s infinite ease-in-out; 
+    color:#1268b3;
+}
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+.abtra{
+    border-left: 6px solid #1268b3;
+}
+.aboutus{
+    background: url(/src/assets/abtus.png);
+    z-index: 10 !important;
+    position: relative;
+}
+.aboutus h1{
+    letter-spacing: 3px;
+}
+
+
+.abt_ul{
+    font-size: small;
+    line-height: 23px;
+    list-style-type:"➔  ";
+}
+@keyframes Watermark-animate{
+    0%{
+        right: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.abtsec2{
+    background-color: #276daa;
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+    .abtra{
+        border-left:none;
+    }
+    .abt_ul li{
+        line-height: 25px;
+        font-size: 15px;
+    }
+  }
+@media (max-width: 640px){
+  
+    .aboutus p{
+        font-size:15px !important ;
+    }
+    .aboutus h1{
+        font-size:20px !important ;
+        letter-spacing: 3px;
+    }
+    .abtra{
+        border-left:none;
+    }
+    .abt_ul li{
+        line-height: 25px;
+    }
+}

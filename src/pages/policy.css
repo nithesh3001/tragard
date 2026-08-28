@@ -1,0 +1,53 @@
+.policy_cont li{
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 10px;
+    list-style-type:"❯❯  ";
+    font-weight:500;
+    margin-left: 15px;
+}
+.head-cont{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight:600;
+
+}
+
+.banner{
+    background: url(../assets/termandcond.png);
+}
+li .titl{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+h1{
+    font-weight: bolder
+}
+.policy_img{
+    width:75%;
+}
+
+@media (max-width: 640px) {
+    .policy_img{
+        width: 20%;
+    }
+    .head-cont{
+        font-size: 15px;
+        line-height: 27px;
+        font-weight:500;
+        margin-left: 20px;
+    margin-right: 20px;
+    
+    }
+        .policy_cont li{
+            font-size: 14px;
+            line-height: 25px;
+            padding-bottom: 3px;
+    }
+    .box h5{
+        font-size: 18px;
+        color: #1268b3;
+    }
+}

@@ -1,0 +1,139 @@
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+.zoom {
+    display: inline-block;
+    animation: zoomInOut 2s infinite ease-in-out;
+    color: rgb(0, 132, 255); 
+}
+.title{
+    font-weight: 800;
+}
+ p{
+    font-size: smaller;
+    line-height: 25px;
+    font-weight: normal;
+}
+.why strong{
+    color: rgb(0, 132, 255);
+}
+.btn-md-lg {
+  padding: 0.5rem 1rem; /* Adjust based on your requirement */
+  font-size: 1rem; /* Slightly larger than the default */
+  border-radius: 0.3rem;
+}
+.why a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.why{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+.line{
+  position: relative;
+    width: 70px !important;
+    border-bottom:3px solid rgb(0, 132, 255) !important;
+}
+.home_button button{
+  background-color: #1268b3;
+}
+.home_button button:hover{
+  box-shadow: #0b5392 0px 3px 10px 0px;
+  background-color: #0b5392;
+}
+.line::before{
+  content: "";
+    position: absolute;
+    top: -5px; /* Position above the line */
+    left: 0; /* Initial position */
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #0084f0;
+    animation: Watermark-animate 2s linear infinite alternate; /* Alternate direction */
+}
+
+.lines{
+    width: 200px;
+    border-bottom:2px solid #008cff;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-blue{
+    color: #1268b3;
+}
+.cimg{
+    width: 40%;
+}
+
+
+.wow {
+    visibility: hidden;
+  }
+  .wow.animated {
+    visibility: visible;
+  }
+  .testi p{
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+
+
+
+  
+  /* Default dot style */
+ 
+  
+  /* Active dot style */
+  .slick-dots li.slick-active button:before {
+    color: white !important;/* Active dot color */
+    opacity: 1;
+    font-size: 15px;  /* Bigger dot */
+  }
+  .testi{
+    background: url(../assets/testimoni.png);
+    border-radius: 20px;
+  }
+
+  .b-title, a{
+    text-decoration: none;
+    color: black;
+  }
+  @media (max-width: 640px) {
+    .home_button button{
+      font-size: 0.9rem;
+    }
+    .ctext{
+      text-align: center;
+    }
+    .slick-dots {
+        bottom: 20px !important; /* Adjust position */
+      }
+    .lines{
+        width: 100px;
+        border-bottom:2px solid #008cff;
+    }
+    .testo{
+      padding:20px;
+    }
+    .resp-text {
+        font-size:17px;
+        font-weight: bolder;
+      }
+    
+  }
+
+    
+  
+  
